@@ -1,0 +1,30 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.details-select {
+  width: fit-content;
+  display: flex;
+  margin-top: 16px;
+  padding: 3px;
+  border-radius: $border-radius--lg;
+  background-color: $input-bg;
+
+  &__button {
+    @include flex-center();
+
+    height: 45px;
+    color: $gray;
+    padding: 0 24px;
+    border: none;
+    border-radius: $border-radius--lg;
+    background-color: transparent;
+    font-size: $font-size--base;
+    font-weight: $font-weight--medium;
+    transition: all 0.2s;
+
+    &--selected {
+      color: $brand-color;
+      background-color: $white;
+    }
+  }
+}

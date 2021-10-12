@@ -1,0 +1,37 @@
+/* Typography variables */
+
+$font-family: 'Inter', sans-serif;
+$header-font-family: 'Gilroy', 'sans-serif';
+$font-weight--normal: 400;
+$font-weight--medium: 600;
+$font-weight--bold: 700;
+$font-size--xs: 12px;
+$font-size--sm: 14px;
+$font-size--base: 15px;
+$font-size--md: 16px;
+$font-size--lg: 20px;
+$font-size--xl: 26px;
+
+/* Color Variables */
+$white: #ffffff;
+$black: #000000;
+$green: #48bb78;
+$dark-green: #38a169;
+$darker-green: #2f855a;
+$gray: #c5c5c5;
+$primary-color: #303030;
+$secondary-color: #81868c;
+$brand-color: #0747a6;
+$input-bg: #c5c5c533;
+$input-border-color: #dadce0;
+
+$border-radius--sm: 4px;
+$border-radius--md: 6px;
+$border-radius--lg: 8px;
+
+/* Media query variables */
+$media-desktop: 'only screen and (max-width : 1200px)';
+$media-desktop-sm: 'only screen and (max-width : 1024px)';
+$media-tablet: 'only screen and (max-width : 768px)';
+$media-mobile: 'only screen and (max-width : 600px)';
+$media-mobile-sm: 'only screen and (max-width : 480px)';

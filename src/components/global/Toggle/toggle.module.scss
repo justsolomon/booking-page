@@ -1,0 +1,48 @@
+@import 'styles/variables';
+
+.toggle {
+  position: relative;
+
+  &__checkbox {
+    height: 28px;
+    width: 50px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  }
+
+  &__label {
+    cursor: pointer;
+    text-indent: -9999px;
+    background: $input-border-color;
+    border: 1px solid $gray;
+    height: 28px;
+    width: 48px;
+    display: block;
+    border-radius: 14px;
+    position: relative;
+    transition: all 0.2s;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      height: 18px;
+      width: 19px;
+      background: $white;
+      border-radius: 18px;
+      transition: all 0.2s;
+    }
+  }
+
+  &--active &__label {
+    background: $brand-color;
+    border-color: transparent;
+  }
+
+  &--active &__label:after {
+    left: calc(100% - 5px);
+    transform: translate(-100%);
+  }
+}

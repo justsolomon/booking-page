@@ -1,0 +1,107 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.home {
+  display: flex;
+
+  &__content {
+    margin-left: 56px;
+  }
+
+  &__header {
+    font-size: $font-size--xl;
+    font-weight: $font-weight--bold;
+    line-height: 38px;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    color: $secondary-color;
+    margin-bottom: 36px;
+    line-height: 21px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__service-list {
+    @include flex-center();
+
+    margin-top: 28px;
+
+    > button {
+      width: 23%;
+    }
+  }
+
+  &__input-list {
+    @include flex-center();
+    margin-bottom: 36px;
+
+    > div {
+      width: 31%;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    &--first {
+      > div {
+        width: unset;
+
+        &:first-child {
+          width: 18%;
+        }
+
+        &:last-child {
+          @include flex-center();
+
+          width: 80%;
+
+          > div {
+            width: 48%;
+          }
+        }
+      }
+    }
+  }
+
+  &__cargo-details {
+    @include flex-center();
+
+    &__description {
+      margin-left: 16px;
+      font-size: $font-size--md;
+
+      span {
+        font-weight: $font-weight--medium;
+      }
+    }
+
+    &__input-list {
+      @include flex-center();
+
+      justify-content: flex-start;
+      margin-top: 48px;
+
+      > div {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  &__additional-services {
+    @include flex-center();
+
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    > div {
+      width: 48%;
+      margin-bottom: 36px;
+    }
+  }
+}

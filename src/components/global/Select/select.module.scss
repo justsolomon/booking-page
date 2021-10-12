@@ -1,0 +1,32 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.select-group {
+  @include flex-center();
+  justify-content: flex-start;
+  position: relative;
+
+  &__select {
+    height: 48px;
+    width: 100%;
+    padding: 0 16px;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+    border-radius: $border-radius--sm;
+    background-color: $input-bg;
+    font-size: $font-size--md;
+  }
+
+  &__dropdown-icon {
+    @include input-group-element();
+
+    left: unset;
+    right: 0;
+
+    svg {
+      height: 24px;
+      width: 24px;
+    }
+  }
+}

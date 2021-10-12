@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import 'assets/fonts/gilroy/stylesheet';
+@import 'variables';
+@import 'reset';
+
+body {
+  font-family: $font-family;
+  color: $primary-color;
+  font-size: $font-size--base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: $font-family;
+  cursor: pointer;
+}
+
+img {
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $header-font-family;
+}

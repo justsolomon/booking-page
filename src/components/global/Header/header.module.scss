@@ -1,0 +1,46 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.header {
+  height: 70px;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: $brand-color;
+
+  &,
+  &__search,
+  &__nav-buttons {
+    @include flex-center();
+  }
+
+  &__logo {
+    margin-right: 56px;
+  }
+
+  &__search-input {
+    color: $white;
+    width: 400px;
+
+    > div {
+      height: 40px;
+    }
+
+    input {
+      height: 40px;
+      padding-left: 24px;
+      color: $white;
+
+      &::placeholder {
+        color: $input-border-color;
+      }
+    }
+  }
+
+  &__nav-buttons {
+    button {
+      margin-left: 24px;
+    }
+  }
+}

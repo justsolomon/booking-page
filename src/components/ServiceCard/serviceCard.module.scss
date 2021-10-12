@@ -1,0 +1,42 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.service-card {
+  @include flex-center();
+
+  height: 90px;
+  font-size: $font-size--md;
+  padding: 0 0 0 16px;
+  border: 1px solid $gray;
+  cursor: pointer;
+  color: $secondary-color;
+  background-color: $white;
+  font-size: $font-size--md;
+  font-weight: $font-weight--normal;
+  border-radius: $border-radius--md;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+
+  &:hover,
+  &:focus,
+  &--selected {
+    border: none;
+    background-color: $brand-color;
+    color: $white;
+    outline: none;
+  }
+
+  span {
+    width: 45%;
+    text-align: left;
+  }
+
+  svg {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+  }
+}

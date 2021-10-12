@@ -1,0 +1,28 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.trade-select {
+  display: flex;
+
+  &__button {
+    @include flex-center();
+
+    height: 50px;
+    color: $secondary-color;
+    padding: 0 16px;
+    border: 2px solid $input-bg;
+    background-color: $white;
+    font-size: $font-size--md;
+    font-weight: $font-weight--medium;
+
+    &:first-child {
+      border-right-width: 0;
+    }
+
+    &--selected {
+      color: $white;
+      border: none;
+      background-color: $brand-color;
+    }
+  }
+}

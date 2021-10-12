@@ -1,0 +1,21 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin input-group-element {
+  @include flex-center();
+
+  padding: 0 16px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  svg {
+    height: unset;
+    width: 16px;
+  }
+}
