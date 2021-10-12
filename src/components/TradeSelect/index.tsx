@@ -5,6 +5,7 @@ const TradeSelect = () => {
   const [selected, setSelected] = useState<'import' | 'export' | ''>('');
 
   const isImport = selected === 'import';
+  const isExport = selected === 'export';
 
   return (
     <div className={styles['trade-select']}>
@@ -18,7 +19,7 @@ const TradeSelect = () => {
       </button>
       <button
         className={`${styles['trade-select__button']} ${
-          !isImport ? styles['trade-select__button--selected'] : ''
+          isExport ? styles['trade-select__button--selected'] : ''
         }`}
         onClick={() => setSelected('export')}
       >
